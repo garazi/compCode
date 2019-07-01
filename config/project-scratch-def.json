@@ -1,9 +1,11 @@
 {
-    "orgName": "Feb GS0 Org",
+    "orgName": "June Prod Org",
     "edition": "Developer",
     "hasSampleData": "true",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"],
-        "disabled": ["S1EncryptedStoragePref2"]
+    "settings": {
+        "orgPreferenceSettings": {
+            "s1DesktopEnabled": true,
+            "s1EncryptedStoragePref2": false
+        }
     }
 }

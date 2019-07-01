@@ -1,6 +1,5 @@
 ({
     doSearch : function(component, event, helper) {
-        console.log("F: ", component.get("v.property.fields"))
         var spinner = component.find("spinner");
         $A.util.removeClass(spinner, "slds-hide");
         var action = component.get("c.getSimilarProperties");
@@ -17,5 +16,9 @@
             $A.util.addClass(spinner, "slds-hide");
         });
         $A.enqueueAction(action);
-    }
+    },
+    toggle: function(component,event,helper) {
+		var event = $A.get("e.c:toggleColumn");
+		event.fire();
+	}
 })

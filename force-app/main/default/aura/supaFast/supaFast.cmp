@@ -13,12 +13,21 @@
 
 	<lightning:card title="A Simple Demo" iconName="custom:custom42">
 		<div class="slds-p-horizontal_small">
-			<lightning:radioGroup name="radioGroup"
-			label="Radio Group"
-			options="{! v.options }"
-			value="{! v.value }"
-			type="radio"
-			variant="label-hidden"/>
+			<lightning:recordViewForm recordId="0013F00000JsZglQAF" 
+              objectApiName="Account">
+             <div class="slds-grid slds-gutters">
+                 <div class="slds-col slds-size_4-of-12 slds-form_inline slds-grid_vertical-align-start">
+                    <lightning:outputField variant="standard" fieldName="Name"/><br/>
+                    <lightning:formattedtext value="text"/><br/>
+                 </div>
+                 <div class="slds-col slds-size_4-of-12 slds-form_inline">
+                    <lightning:outputField variant="label-hidden" fieldName="Name"/><br/>
+                 </div>
+                 <div class="slds-col slds-size_4-of-12 slds-form_inline">
+                    <lightning:outputField variant="label-hidden" fieldName="Name"/><br/>
+                 </div>
+             </div>
+    	</lightning:recordViewForm>
 		</div>
 	</lightning:card>
 </aura:component>

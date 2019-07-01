@@ -1,19 +1,17 @@
 <template>
-    <lightning-layout>
-        <lightning-layout-item size='2'
-                               class="slds-align_absolute-center">
-            <div class="icon">{weatherIcon}</div>
-        </lightning-layout-item>
-        <lightning-layout-item class="slds-align_absolute-center">
-            <div class="title">{weatherState}</div>
-        </lightning-layout-item>
-        <lightning-layout-item size='2'
-                               class="slds-align_absolute-center">
-            <div class="temperature">{weatherTemperature}</div>
-        </lightning-layout-item>
-        <lightning-layout-item size='2'
-                               class="slds-align_absolute-center">
-            <div class="convert">{weatherTemperatureConversion}</div>
-        </lightning-layout-item>
-    </lightning-layout>
+    <template if:true={city}>
+        <lightning-layout>
+            <lightning-layout-item size='2'
+                                   class="slds-align_absolute-center">
+                <div class="icon">{weatherIcon}</div>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-align_absolute-center">
+                <div class="title">{weatherState}</div>
+            </lightning-layout-item>
+            <lightning-layout-item size='4'
+                                   class="slds-align_absolute-center">
+                <div class="temperature">{weatherTemperature} / {weatherTemperatureConversion}</div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
 </template>

@@ -1,14 +1,8 @@
 <template>
         <lightning-card title="Test Component"
                         icon-name="custom:custom42">
-
-                        <lightning-button-icon
-                        icon-name="utility:settings"
-                        variant="bare"
-                        alternative-text="Settings"
-                        icon-class="slds-m-around_medium">
-                    </lightning-button-icon>
-
-
+                <div class="slds-card__body_inner">
+                        <lightning-input type="text" name="input1" label="Name" field-level-help="This is a test"></lightning-input>
+                </div>
         </lightning-card>
 </template>

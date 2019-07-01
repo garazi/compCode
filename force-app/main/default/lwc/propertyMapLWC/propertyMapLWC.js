@@ -27,7 +27,7 @@ export default class PropertyMapLWC extends LightningElement {
             this.zoomLevel = "16";
             this.property = value.data;
             this.address = this.property.fields.Address__c.value + ', ' + this.property.fields.City__c.value + ', ' + this.property.fields.State__c.value;
-            this.city = this.property.fields.City__c.value;
+            this.city = this.property.fields.City__c.value; 
             this.cardTitle = this.property.fields.Title__c.value;
             this.mapMarkers = [{
                 location: {

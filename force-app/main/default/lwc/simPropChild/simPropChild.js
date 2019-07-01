@@ -1,5 +1,4 @@
 import { LightningElement, api, track, wire } from 'lwc';
-
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { registerListener, unregisterAllListeners, fireEvent } from 'c/pubsub';
 import { NavigationMixin, CurrentPageReference } from 'lightning/navigation';

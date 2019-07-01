@@ -2,6 +2,7 @@
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="businessExplorer">
     <apiVersion>45.0</apiVersion>
     <isExposed>true</isExposed>
+    <masterLabel>Business Explorer</masterLabel>
     <targets>
       <target>lightning__AppPage</target>
       <target>lightning__RecordPage</target>

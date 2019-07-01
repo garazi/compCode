@@ -19,7 +19,7 @@ export default class brokerCard extends LightningElement {
     wiredProperty(value) {
         if (value.data) {
             this.property = value.data;
-            this.cardTitle = 'Broker for ' + this.property.fields.Name.value;
+            this.cardTitle = 'The Broker for ' + this.property.fields.Name.value;
             this.brokerId = this.property.fields.Broker__c.value;
         } else if (value.error) {
             console.log("ERROR: ", value.error)

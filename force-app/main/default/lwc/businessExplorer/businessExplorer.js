@@ -26,7 +26,7 @@ export default class BusinessExplorer extends LightningElement {
     @track zoomLevel = "18";
     @api mapMarkers = [];
     @api flexipageRegionWidth;
-    @api cmpHeight = "small";
+    @api cmpHeight;
     @track heightCSS;
     @track loaded = false;
 
