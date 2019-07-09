@@ -114,9 +114,6 @@
             <componentName>brokerCardLWC</componentName>
         </componentInstances>
         <componentInstances>
-            <componentName>BrokerCard</componentName>
-        </componentInstances>
-        <componentInstances>
             <componentInstanceProperties>
                 <name>priceRange</name>
                 <value>50000</value>
@@ -136,22 +133,10 @@
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
-                <name>designHeight</name>
+                <name>cmpHeight</name>
                 <value>small</value>
             </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>tab1</name>
-                <value>Schools</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>tab2</name>
-                <value>Shopping</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>tab3</name>
-                <value>Restaurants</value>
-            </componentInstanceProperties>
-            <componentName>NeighborhoodExplorer</componentName>
+            <componentName>businessExplorer</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>

@@ -17,9 +17,9 @@ public class DreamhouseTests {
         insert p1;
         insert p2;
         
-        PageReference pref = Page.Similar_Properties;
-        pref.getParameters().put('id',p1.id);
-        Test.setCurrentPage(pref);
+        // PageReference pref = Page.Similar_Properties;
+        // pref.getParameters().put('id',p1.id);
+        // Test.setCurrentPage(pref);
         
         ApexPages.StandardController con = new ApexPages.StandardController(p1);
         GetPropertiesApexController ext = new GetPropertiesApexController(con);

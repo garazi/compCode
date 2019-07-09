@@ -74,13 +74,13 @@ export default class BusinessExplorer extends LightningElement {
     renderedCallback() {
         switch(this.cmpHeight) {
             case 'small':
-                this.heightCSS = 'slds-list_vertical slds-has-dividers_bottom-space small';
+                this.heightCSS = 'slds-has-dividers_bottom-space small';
                 break;
             case 'medium':
-                this.heightCSS = 'slds-list_vertical slds-has-dividers_bottom-space medium';
+                this.heightCSS = 'slds-has-dividers_bottom-space medium';
                 break;
             default:
-                this.heightCSS = 'slds-list_vertical slds-has-dividers_bottom-space large';
+                this.heightCSS = 'slds-has-dividers_bottom-space large';
         }
     }
 

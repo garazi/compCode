@@ -394,10 +394,6 @@
         <apexPage>DreamhouseLeads</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <pageAccesses>
-        <apexPage>Similar_Properties</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
     <tabSettings>
         <tab>Broker__c</tab>
         <visibility>Visible</visibility>

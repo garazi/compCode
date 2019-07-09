@@ -5,7 +5,8 @@
         <div class="slds-p-horizontal_medium">
             <lightning-map map-markers={mapMarkers}
                            markers-title={cardTitle}
-                           zoom-level={zoomLevel}></lightning-map>
+                           zoom-level={zoomLevel}
+                           list-view="hidden"></lightning-map>
             <lightning-tabset>
                 <template for:each={tabs}
                           for:item="item"
@@ -14,8 +15,8 @@
                                    key={item.id}
                                    value={item.value}
                                    onactive={handleActive}
-                                   class="foo">
-                        <ul class={cmpHeight}>
+                                   class="noSpace">
+                        <ul class={heightCSS}>
                             <template for:each={bizArray}
                                       for:item="item"
                                       if:true={bizArray}>

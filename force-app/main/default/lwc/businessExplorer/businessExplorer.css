@@ -16,6 +16,6 @@
     height: 50rem;
     overflow: scroll;
 }
-.foo {
-    position: relative;
+.noSpace {
+    padding-top: 0;
 }
