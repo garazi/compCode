@@ -11,6 +11,8 @@ export default class formBuilder extends LightningElement {
     @api record;
     @api layout;
     @api columns;
+    @track init;
+    @track message;
     @track fields = [];
 
     connectedCallback() {  
@@ -18,15 +20,17 @@ export default class formBuilder extends LightningElement {
 
     renderedCallback() {
         if (!this.object) {
+            this.message = "Please provide an object to begin.";
             return;
         }
 
         let form = this.template.querySelector('lightning-record-form');
 
+        if (this.layout === 'None' && this.fieldsToDisplay === '') {
+            this.message = "Please select a layout and/or provide a list of fields."
+        }
+
         if (this.layout !== 'None') {
-            if (this.layout == 'Compact') {
-                form.recordId = '';
-            }
             form.layoutType = this.layout;
         }
 

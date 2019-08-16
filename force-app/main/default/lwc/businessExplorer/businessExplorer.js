@@ -88,7 +88,6 @@ export default class BusinessExplorer extends LightningElement {
         this.currentTab = evt.target.value;
         this.loaded = false;
         console.log("LOAD: ", this.loaded)
-
     }
 
     createMapMarkers(event) {

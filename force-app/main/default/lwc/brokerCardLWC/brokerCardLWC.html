@@ -2,13 +2,14 @@
     <lightning-card title={cardTitle}
                     icon-name="custom:custom85">
         <div class="slds-m-around_medium">
-                <lightning-record-form 
-                record-id={brokerId}
-                object-api-name="Broker__c"
-                fields={brokerFields}
-                columns="2"
-                mode="View"
-                onsuccess={fireToast} ></lightning-record-form>
+            <!-- <div class="outline"> -->
+                <lightning-record-form record-id={brokerId}
+                                       object-api-name="Broker__c"
+                                       fields={brokerFields}
+                                       columns="2"
+                                       mode="View"
+                                       onsuccess={fireToast}></lightning-record-form>
+            <!-- </div> -->
         </div>
     </lightning-card>
 </template>
